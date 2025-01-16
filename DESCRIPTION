@@ -1,0 +1,16 @@
+Package: scopusscoper
+Title: Query the Scopus API, cache results locally, extract and combine information as needed.
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Giorgio",
+             family = "Comai",
+             role = c("aut", "cre", "cph"),
+             email = "g@giorgiocomai.eu",
+             comment = c(ORCID = "0000-0002-0515-9542")))
+Description: Query the Scopus API, cache results locally, extract and combine information as needed.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    httr2
