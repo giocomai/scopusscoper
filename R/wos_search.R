@@ -33,7 +33,7 @@ wos_search <- function(query,
       fs::path_ext_set("rds")
   }
 
-  search_combo_file <- fs::path(wos_settings[["base_folder"]], filename)
+  search_combo_file <- fs::path(wos_settings[["wos_base_folder"]], filename)
 
   if (fs::file_exists(search_combo_file)) {
     return(readr::read_rds(file = search_combo_file))
@@ -42,7 +42,7 @@ wos_search <- function(query,
   base_url <- "https://api.clarivate.com/apis/wos-starter/v1/documents"
 
   base_cache_folder <- fs::path(
-    wos_settings[["base_folder"]],
+    wos_settings[["wos_base_folder"]],
     filename |>
       fs::path_ext_remove()
   ) |>
